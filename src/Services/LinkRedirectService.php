@@ -8,13 +8,13 @@ use Orlovdev\LaravelLinkShortener\Models\Link;
 
 final class LinkRedirectService
 {
-    public function generate(string $code): array
+    public function getLink(string $code): array
     {
         $record = Link::query()
             ->where('code', $code)
             ->first();
 
-        if ($record->doesntExist()) {
+        if (!$record) {
             return [
                 'error' => 'Link not found'
             ];

@@ -8,7 +8,7 @@ use Orlovdev\LaravelLinkShortener\Models\Link;
 
 class LinkGenerateService
 {
-    public function generate(string $link): array
+    public function generateCode(string $link): array
     {
         $record = Link::query()
             ->where('link', $link)
@@ -16,7 +16,7 @@ class LinkGenerateService
 
         $code = $record?->code;
 
-        if ($record->doesntExist()) {
+        if (!$record) {
             $code = uniqid();
 
             Link::query()
