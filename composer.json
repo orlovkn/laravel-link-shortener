@@ -35,7 +35,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Orlovdev\\LaravelLinkShortener\\Providers\\EloquentFilterServiceProvider"
+        "Orlovdev\\LaravelLinkShortener\\Providers\\LaravelExampleServiceProvider"
       ]
     }
   },

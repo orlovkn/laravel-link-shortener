@@ -23,7 +23,7 @@ It includes an artisan command, controllers, model, database migration, etc.
 ## Installation
 
 ```bash
-composer require orlovkn/laravel-extention
+composer require orlovkn/laravel-link-shortener
 ```
 
 ## Testing
