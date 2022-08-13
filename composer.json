@@ -1,0 +1,44 @@
+{
+  "name": "orlovkn/laravel-link-shortener",
+  "description": "Laravel link shortener package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "role": "Developer",
+      "name": "Konstantin Orlov",
+      "email": "orlovkn.job@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Orlovdev\\LaravelLinkShortener\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Orlovdev\\LaravelLinkShortener\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "illuminate/database": "^9.22",
+    "illuminate/support": "^9.22"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "orchestra/testbench": "^7.6"
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Orlovdev\\LaravelLinkShortener\\Providers\\EloquentFilterServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
